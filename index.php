@@ -1,5 +1,5 @@
 <?php
-<html>
+echo "<html>
 <head>
     <title>
         PHP Demos
@@ -8,11 +8,12 @@
 <body>
 
 <!-- Header start -->
-
-<!-- Header end -->
+include 'templates/header/header.php';
+<!-- Header end -->";
 echo "PHP Demos";
-</body>
-</html>
+
+echo "</body>
+</html>";
 ?>
 
 
