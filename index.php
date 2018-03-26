@@ -1,12 +1,19 @@
+<?php
+<html>
+<head>
+    <title>
+        PHP Demos
+    </title>
+</head>
+<body>
 
 <!-- Header start -->
 
 <!-- Header end -->
-
-<?php
 echo "PHP Demos";
+</body>
+</html>
 ?>
-
 
 
 
