@@ -7,9 +7,15 @@ echo "<html>
 </head>
 <body>
 
-<!-- Header start -->
+<!-- Header start -->";
 include 'templates/header/header.php';
-<!-- Header end -->";
+echo "<!-- Header end -->";
+
+echo "<!-- footer start -->";
+include 'templates/footer/footer.php';
+echo "<!-- footer end -->";
+
+
 echo "PHP Demos";
 
 echo "</body>
