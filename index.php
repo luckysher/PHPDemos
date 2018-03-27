@@ -5,11 +5,15 @@ echo "<html>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'/>
         <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
         <title>
-            PHP Demos
+           { $title }
         </title>
     </head>
     <body>
 ";
+
+echo "<!-- Demo data start -->";
+    include 'templates/demo_data/data.php';
+echo "<!-- Demo data end -->";
 
 echo "<!-- Header start -->";
     include 'templates/header/header.php';
