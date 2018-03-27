@@ -10,13 +10,11 @@ echo "<html>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'/>
         <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
         <title>
-            $demo->title; 
+            $demo->title
         </title>
     </head>
     <body>
 ";
-
-
 
 echo "<!-- Header start -->";
     include 'templates/header/header.php';
