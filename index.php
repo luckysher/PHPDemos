@@ -1,4 +1,9 @@
 <?php
+
+echo "<!-- Demo data start -->";
+    include 'templates/demo_data/data.php';
+echo "<!-- Demo data end -->";
+
 echo "<html>
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -11,9 +16,7 @@ echo "<html>
     <body>
 ";
 
-echo "<!-- Demo data start -->";
-    include 'templates/demo_data/data.php';
-echo "<!-- Demo data end -->";
+
 
 echo "<!-- Header start -->";
     include 'templates/header/header.php';
