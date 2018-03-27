@@ -16,7 +16,7 @@ echo '<nav class="navbar is-transparent">
         </div>
         <div class="navbar-end">';
         foreach($demos->menus as $menu){
-            echo '<a class="navbar-item" href="/">'.
+            echo '<a class="navbar-items" href="/">'.
                  $menu
                 .'</a>';
                 }
