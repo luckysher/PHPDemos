@@ -12,17 +12,16 @@ echo '<nav class="navbar is-transparent">
             </div>
         </div>
         <div class="navbar-menu">
-        <div class="navbar-start">';
-
-foreach($demos->menus as $menu){
-   echo '<a class="navbar-item" href="/">'.
-             $menu
-         .'</a>';
-}
+        <div class="navbar-start">
+        </div>
+        <div class="navbar-end">';
+        foreach($demos->menus as $menu){
+            echo '<a class="navbar-item" href="/">'.
+                 $menu
+                .'</a>';
+                }
 
 echo '        </div>
-             </div>
-           <div class="navbar-end">
          </div>
        </div>
       </nav>';
