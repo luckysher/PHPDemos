@@ -1,0 +1,13 @@
+
+
+.navbar-items{
+    display:flex;
+    align-items:center;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+
+.navbar-menu .navbar-end a.navbar-items.is-active, .navbar-menu .navbar-end a.navbar-items:hover {
+    background-color:#ffdd57;
+}
