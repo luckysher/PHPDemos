@@ -14,7 +14,7 @@ echo "<html>".
             $demos->title.
      "   </title>".
      "</head>".
-     "<body class='container'>";
+     "<body>";
 
 echo "<!-- Header start -->";
     include 'templates/header/header.php';
