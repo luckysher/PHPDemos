@@ -1,8 +1,8 @@
 <?php
 echo "
     <div class='container'>
-        <div class='columns hero is-success'>
-            <div class='column hero is-half is-warning'>
+        <div class='columns'>
+            <div class='column'>
                 column
             </div>
         </div>

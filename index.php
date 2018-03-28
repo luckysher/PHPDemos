@@ -11,7 +11,7 @@ echo "<html>".
      "   <link rel='stylesheet' href='static/css/demo.css'/>".
      "   <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>".
      "   <title>".
-            $demos->title
+            $demos->title.
      "   </title>".
      "</head>".
      "<body class='container'>";
