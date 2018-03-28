@@ -5,11 +5,11 @@ echo '<nav class="navbar is-primary">'.
      '           <a class="navbar-item" href="/">'.
      '            <img src="https://bulma.io/images/bulma-logo-white.png" alt="PHP Demos " width="112" height="28">'.
      '           </a>'.
-     '           <div class="navbar-burger burger">'.
-     '              <span></span>'.
-     '              <span></span>'.
-     '              <span></span>'.
-     '           </div>'.
+     '           <div class="navbar-burger burger">'.;
+                foreach(range(0, 2) as $num){
+                    echo '<span></span>';
+                 }
+echo '           </div>'.
      '        </div>'.
      '        <div class="navbar-menu">'.
      '           <div class="navbar-start">'.
