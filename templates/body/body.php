@@ -1,6 +1,6 @@
 <?php
 echo "
-    <div class='container'>
+    <div>
         <div class='columns'>
             <div class='column'>
                 column
