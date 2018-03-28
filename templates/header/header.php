@@ -1,7 +1,7 @@
 <?php
-echo '<nav class="navbar is-primary">
+echo '<nav class="navbar is-primary">'.
      '    <div class="container">'.
-     '        <div class="navbar-brand" style="margin-left:10px;">'.
+     '        <div class="navbar-brand">'.
      '           <a class="navbar-item" href="/">'.
      '            <img src="https://bulma.io/images/bulma-logo-white.png" alt="PHP Demos " width="112" height="28">'.
      '           </a>'.
@@ -16,7 +16,7 @@ echo '<nav class="navbar is-primary">
      '          </div>'.
      '           <div class="navbar-end">';
                  foreach($demos->menus as $menu){
-                    echo '<a class="navbar-item" style="margin-right:15px;" href="/">'.
+                    echo '<a class="navbar-item" href="/">'.
                       $menu.
                     '</a>';
                     }
