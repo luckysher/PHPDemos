@@ -8,19 +8,19 @@
         public $methodType;
 
          // constructor
-         public __constructor(){
+         public function __construct(){
             $this-> formName = "Demo Form";
             $this-> fid = "dform";
             $this-> methodType = "post";
          }
 
         // add start form tag in demo form
-        public startForm(){
+        public function startForm(){
             echo '<form id="$this->fid" method="$this->methodType">';
         }
 
         // add various fields in form
-        public addFormFields(){
+        public function addFormFields(){
             foreach($demos->formFields as $label => $fname){
                   echo '<div class="field">'.
                        '     <label class="label">$label</label>'.
@@ -33,7 +33,7 @@
 
 
         // add submit button in form
-        public addSubmitButton(){
+        public function addSubmitButton(){
                   echo '<div class="field">'.
                        '     <div class="control">'.
                        '         <button type="submit" value="Add Details"></button>'.
@@ -42,7 +42,7 @@
         }
 
         // add end form tag
-        public endForm(){
+        public function endForm(){
             echo '</form">';
         }
 

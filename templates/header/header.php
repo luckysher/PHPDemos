@@ -5,7 +5,7 @@ echo '<nav class="navbar is-primary">'.
      '           <a class="navbar-item" href="/">'.
      '            <img src="https://bulma.io/images/bulma-logo-white.png" alt="PHP Demos " width="112" height="28">'.
      '           </a>'.
-     '           <div class="navbar-burger burger">'.;
+     '           <div class="navbar-burger burger">';
                 foreach(range(0, 2) as $num){
                     echo '<span></span>';
                  }
