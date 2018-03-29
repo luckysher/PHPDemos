@@ -47,4 +47,6 @@
         }
 
     }
+
+    $demoForm = new DemoForm;
 ?>
