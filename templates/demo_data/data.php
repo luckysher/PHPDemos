@@ -9,6 +9,7 @@
             $this->title = "PHP Demos";
             $this->menus = ['Home', 'Contact us', 'About Us'];
             $this->tabs = ['Form Demo', 'List Render demo', 'Modal Demo'];
+            $this->formFields = array('Name' => 'name', 'Age' => 'age', 'Marks' => 'marks', 'Roll no' => 'rnum');
         }
 
         public function setTitle($title){
