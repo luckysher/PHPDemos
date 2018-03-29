@@ -14,19 +14,17 @@ echo '<div class="page">'.
      '              </div>'.
      '           </div>'.
      '        </div>'.
+     '        <div class="columns" id="formdemo">'.
+     '           <div class="column">';
+                    echo '<!-- Demo form start here -->';
+                         $demoForm->startForm();
+                         $demoForm->addFormFields();
+                         $demoForm->addSubmitButton();
+                         $demoForm->endForm();
+                    echo '<!-- Demo form end here -->';
+
+echo '           </div>'.
+     '        </div>'.
      '    </div>'.
-     '    <div class="columns" id="formdemo">'.
-     '        <div class="column">';
-
-echo '<!-- Demo form start here -->';
-     $demoForm->startForm();
-     $demoForm->addFormFields();
-     $demoForm->addSubmitButton();
-     $demoForm->endForm();
-echo '<!-- Demo form end here -->';
-
-
-echo '        </div>'.
-     '     </div>'.
      '</div>';
 ?>
