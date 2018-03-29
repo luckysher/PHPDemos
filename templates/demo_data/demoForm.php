@@ -29,6 +29,16 @@
             }
         }
 
+
+        // add submit button in form
+        public addSubmitButton(){
+                  echo '<div class="field">'.
+                       '     <div class="control">'.
+                       '         <button type="submit" value="Add Details"></button>'.
+                       '     </div>'.
+                       '</div>';
+        }
+
         // add end form tag
         public endForm(){
             echo '</form">';
