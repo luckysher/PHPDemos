@@ -11,5 +11,14 @@
             $this->title = $title;
         }
 
+        public function setBodyText($txt){
+            $this->description = $txt;
+        }
+
+        public function setButtons($btns){
+            $this->buttons = $btns;
+        }
+
+
     }
 ?>
