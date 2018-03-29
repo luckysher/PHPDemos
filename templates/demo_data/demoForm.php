@@ -5,16 +5,18 @@
         public $formName;
         // form id
         public $fid;
+        public $methodType;
 
          // constructor
          public __constructor(){
             $this-> formName = "Demo Form";
             $this-> fid = "dform";
+            $this-> methodType = "post";
          }
 
         // add start form tag in demo form
         public startForm(){
-            echo '<form id="$this->fid">';
+            echo '<form id="$this->fid" method="$this->methodType">';
         }
 
         // add various fields in form
