@@ -18,16 +18,16 @@
 
         // add start form tag in demo form
         public function startForm(){
-            echo '<form id="$this->fid" method="$this->methodType">';
+            echo '<form id="$this->fid" method="'.$this->methodType.'">';
         }
 
         // add various fields in form
         public function addFormFields(){
             foreach($this->formFields as $label => $fname){
                   echo '<div class="field">'.
-                       '     <label class="label">$label</label>'.
+                       '     <label class="label">'.$label.'</label>'.
                        '     <div class="control">'.
-                       '         <input class="input" type="text" placeholder="Text input" name="$fname">'.
+                       '         <input class="input" type="text" placeholder="Text input" name="'.$fname.'">'.
                        '     </div>'.
                        '</div>';
             }
