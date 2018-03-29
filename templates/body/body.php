@@ -1,4 +1,9 @@
 <?php
+
+echo '<!-- Demo form class -->';
+    include 'templates/demo_data/demoForm.php';
+echo '<!-- Demo form class -->';
+
 echo '<div class="page">'.
      '    <div class="banner hero-body is-primary">'.
      '       <div class="hero-body container">'.
@@ -10,10 +15,18 @@ echo '<div class="page">'.
      '           </div>'.
      '        </div>'.
      '    </div>'.
-     '    <div class="columns">'.
-     '        <div class="column">'.
-     '           column'.
-     '        </div>'.
+     '    <div class="columns" id="formdemo">'.
+     '        <div class="column">';
+
+echo '<!-- Demo form start here -->\n';
+     $demoForm->startForm();
+     $demoForm->addFormFields();
+     $demoForm->addSubmitButton();
+     $demoForm->endForm();
+echo '<!-- Demo form end here -->\n';
+
+
+echo '        </div>'.
      '     </div>'.
      '</div>';
 ?>
