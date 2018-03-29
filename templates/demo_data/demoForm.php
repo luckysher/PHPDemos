@@ -18,7 +18,7 @@
 
         // add start form tag in demo form
         public function startForm(){
-            echo '<form id="$this->fid" method="'.$this->methodType.'">';
+            echo '<form id="'.$this->fid.'" method="'.$this->methodType.'">';
         }
 
         // add various fields in form
