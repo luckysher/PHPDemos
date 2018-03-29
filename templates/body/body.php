@@ -5,7 +5,7 @@ echo '<!-- Demo form class -->';
 echo '<!-- Demo form class -->';
 
 echo '<div class="page">'.
-     '    <div class="banner hero-body is-primary">'.
+     '    <div class="banner hero is-link">'.
      '       <div class="hero-body container">'.
      '          <div class="columns is-vcentered">'.
      '             <div class="column">'.
@@ -14,6 +14,8 @@ echo '<div class="page">'.
      '              </div>'.
      '           </div>'.
      '        </div>'.
+     '      </div>'.
+     '      <div class="container" id="demos" style="margin-top:50px;">'.
      '        <div class="columns" id="formdemo">'.
      '           <div class="column">';
                     echo '<!-- Demo form start here -->';
