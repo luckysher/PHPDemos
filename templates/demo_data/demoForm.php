@@ -6,12 +6,14 @@
         // form id
         public $fid;
         public $methodType;
+        public $formFields;
 
          // constructor
-         public function __construct(){
+         public function __construct($dClass){
             $this-> formName = "Demo Form";
             $this-> fid = "dform";
             $this-> methodType = "post";
+            $this-> formFields = $dClass->formFields;
          }
 
         // add start form tag in demo form
@@ -21,7 +23,7 @@
 
         // add various fields in form
         public function addFormFields(){
-            foreach($demos->formFields as $label => $fname){
+            foreach($this->formFields as $label => $fname){
                   echo '<div class="field">'.
                        '     <label class="label">$label</label>'.
                        '     <div class="control">'.
@@ -48,5 +50,5 @@
 
     }
 
-    $demoForm = new DemoForm;
+    $demoForm = new DemoForm($demos);
 ?>
