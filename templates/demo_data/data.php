@@ -4,6 +4,7 @@
         public $title;
         public $menus;
         public $tabs;
+        public $formFields;
 
         public function __construct(){
             $this->title = "PHP Demos";
