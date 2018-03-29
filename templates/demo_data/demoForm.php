@@ -23,14 +23,14 @@
 
         // add various fields in form
         public function addFormFields(){
-            foreach($this->formFields as $label => $fname){
+            foreach($this->formFields as $fDetails){
                   echo '<div class="field">'.
-                       '     <label class="label">'.$label.'</label>'.
+                       '     <label class="label">'.$fDetails["label"].'</label>'.
                        '     <div class="control">'.
-                       '         <input class="input" type="text" placeholder="Text input" name="'.$fname.'">'.
+                       '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].' name="'.$fDetails["fname"].'">'.
                        '     </div>'.
                        '</div>';
-            }
+          }
         }
 
 
