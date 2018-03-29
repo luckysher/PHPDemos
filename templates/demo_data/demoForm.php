@@ -27,7 +27,7 @@
                   echo '<div class="field">'.
                        '     <label class="label">'.$fDetails["label"].'</label>'.
                        '     <div class="control">'.
-                       '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].' name="'.$fDetails["fname"].'">'.
+                       '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].'" name="'.$fDetails["fname"].'">'.
                        '     </div>'.
                        '</div>';
           }
