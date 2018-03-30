@@ -38,7 +38,7 @@
         public function addSubmitButton(){
                   echo '<div class="field">'.
                        '     <div class="control">'.
-                       '         <button class="button is-link">Add Details</button>'.
+                       '         <button class="button is-link" name="addDetails">Add Details</button>'.
                        '     </div>'.
                        '</div>';
         }

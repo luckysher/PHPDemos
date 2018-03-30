@@ -44,6 +44,4 @@
                  '</div>';
         }
     }
-    echo '<h2>Calling model....</h2>';
-
 ?>
