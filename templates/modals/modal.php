@@ -37,7 +37,7 @@
                  '           </section>'.
                  '           <footer class="modal-card-foot">';
                               foreach($this->buttons as $button){
-                                 echo '<button class="button is-success">'.$button.'</button>';
+                                 echo '<button id="close" class="button is-success">'.$button.'</button>';
                              }
             echo '           </footer>'.
                  '   </div>'.
