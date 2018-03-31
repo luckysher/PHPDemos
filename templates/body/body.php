@@ -4,6 +4,15 @@ echo '<!-- Demo form class -->';
     include 'templates/demo_data/demoForm.php';
 echo '<!-- Demo form class -->';
 
+echo '<!-- Demo modal class -->';
+    include 'templates/modals/modal.php';
+echo '<!-- Demo modal class -->';
+
+echo '<!-- Demo formAction -->';
+    include 'templates/actions/formAction.php';
+echo '<!-- Demo form action -->';
+
+
 echo '<div class="page">'.
      '    <div class="banner hero is-link">'.
      '       <div class="hero-body container">'.
