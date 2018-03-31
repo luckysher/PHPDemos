@@ -18,7 +18,7 @@
 
         // add start form tag in demo form
         public function startForm(){
-            echo '<form id="'.$this->fid.'" action="templates/actions/formAction.php" method="'.$this->methodType.'">';
+            echo '<form id="'.$this->fid.'" action="index.php" method="'.$this->methodType.'">';
         }
 
         // add various fields in form
@@ -32,7 +32,6 @@
                        '</div>';
           }
         }
-
 
         // add submit button in form
         public function addSubmitButton(){
