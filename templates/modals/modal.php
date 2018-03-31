@@ -25,7 +25,7 @@
 
         // method for showing modal
         public function show(){
-            echo '<div class="modal">'.
+            echo '<div id="modal" class="modal">'.
                  '   <div class="modal-background"></div>'.
                  '       <div class="modal-card">'.
                  '          <header class="modal-card-head">'.

@@ -31,10 +31,6 @@ echo "<!-- footer end -->";
 
 echo "</body>".
      "<script>".
-     "   $(document).ready(function(){".
-     "    $('send').bind('click', function(){".
-     "        $('#modal-ter').css('display', 'block');".
-     "    });".
      "    $('#close').bind('click', function(){".
      "        $('#modal-ter').css('display', 'none');".
      "    });".
