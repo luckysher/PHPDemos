@@ -9,6 +9,7 @@ echo "<html>".
      "   <meta name='viewport' content='width=device-width, initial-scale=1'>".
      "   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css'/>".
      "   <link rel='stylesheet' href='static/css/demo.css'/>".
+     "   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>".
      "   <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>".
      "   <title>".
             $demos->title.
@@ -29,7 +30,17 @@ echo "<!-- footer start -->";
 echo "<!-- footer end -->";
 
 echo "</body>".
-     "</html>";
+     "<script>".
+     "   $(document).ready(function(){".
+     "    $('send').bind('click', function(){".
+     "        $('#modal-ter').css('display', 'block');".
+     "    });".
+     "    $('#close').bind('click', function(){".
+     "        $('#modal-ter').css('display', 'none');".
+     "    });".
+     " });".
+     " </script>".
+     " </html>";
 ?>
 
 
