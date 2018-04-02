@@ -1,4 +1,5 @@
 <?php
+    // Form Class for handling form html code and actions
 
     class DemoForm {
         // form extra fields
