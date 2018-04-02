@@ -8,8 +8,8 @@ function checkFormErrors($demos){
 }
 
 function showModal(){
-        $modal = new Modal("Form Data Demo with Modal");
-        $description = "modal description:".
+        $modal = new Modal("Form Data Modal");
+        $description = "Your Post the:".
                        "   form fields : Name  :  ".$_POST["name"].
                        "   form fields : Age  :  ".$_POST["age"].
                        "   form fields : Marks  :  ".$_POST["marks"].
@@ -20,7 +20,8 @@ function showModal(){
 }
 
  if ($_POST){
-
+    checkFormErrors($demos);
+    showModal();
  }
 
 ?>
