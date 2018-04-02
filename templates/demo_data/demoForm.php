@@ -14,7 +14,7 @@
         public $age;
         public $age_error = "";
         public $marks;
-        public $marks_error = "";
+        public $marks_error = "checking";
         public $rnum;
         public $rnum_error = "";
 
@@ -38,6 +38,7 @@
                        '     <label class="label">'.$fDetails["label"].'</label>'.
                        '     <div class="control">'.
                        '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].'" name="'.$fDetails["fname"].'">'.
+                       '         <h2 class="has-text-danger"><span>*</span><span>'.$this->($fDetails["fname"]).'</span></h2>'.
                        '     </div>'.
                        '</div>';
           }
