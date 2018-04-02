@@ -8,21 +8,14 @@
         public $methodType;
         public $formFields;
 
-        //form data and error fileds
-        public $name = "";
-        public $name_error = "";
-        public $age;
-        public $age_error = "";
-        public $marks;
-        public $marks_error = "checking";
-        public $rnum;
-        public $rnum_error = "";
+
 
          // constructor
          public function __construct($dClass){
             $this-> formName = "Demo Form";
             $this-> fid = "dform";
             $this-> methodType = "post";
+            $this-> $marks_error = "checking..";
             $this-> formFields = $dClass->formFields;
          }
 
@@ -37,8 +30,10 @@
                   echo '<div class="field">'.
                        '     <label class="label">'.$fDetails["label"].'</label>'.
                        '     <div class="control">'.
-                       '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].'" name="'.$fDetails["fname"].'">'.
-                       '         <h2 class="has-text-danger"><span>*</span><span>'.$this->($fDetails["fname"]).'</span></h2>'.
+                       '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].'" name="'.$fDetails["fname"].'" val="'.$fDetails["val"].'">';
+                       if (!empty($fDetails["errors"])){
+                            echo '         <h2 class="has-text-danger"><span>*</span><span>'.$fDetails["errors"].'</span></h2>'.
+                       }
                        '     </div>'.
                        '</div>';
           }
