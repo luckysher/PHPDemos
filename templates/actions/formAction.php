@@ -17,6 +17,7 @@ function checkFormErrors($demos){
     if(empty($_POST["marks"])){
         $errors = True;
         $demos->formFields[2]["val"] = $_POST["marks"];
+        $demos->formFields[2]["errors"] = "Marks is required";
     }
     return $errors;
 }
