@@ -7,7 +7,7 @@ function checkFormErrors($demos){
     }
 }
 
- if ($_POST){
+function showModal(){
         $modal = new Modal("Form Data Demo with Modal");
         $description = "modal description:".
                        "   form fields : Name  :  ".$_POST["name"].
@@ -17,5 +17,10 @@ function checkFormErrors($demos){
 
         $modal->setBodyText($description);
         $modal->show();
+}
+
+ if ($_POST){
+
  }
+
 ?>
