@@ -3,12 +3,14 @@
 
 // check the error for th form data here
 function checkFormErrors($demos){
+
     if(empty($_POST["age"])){
         $demos->formFields[1]["val"] = $_POST["age"];
         $demos->formFields[1]["errors"] = "Age should be non empty/valid integer";
     }
 }
 
+// method for showing modal
 function showModal(){
         $modal = new Modal("Form Data Modal");
         $description = "Your Post the:".
@@ -21,6 +23,9 @@ function showModal(){
         $modal->show();
 }
 
+// if any data posted the
+// check the errors and
+// show the modal
  if ($_POST){
     checkFormErrors($demos);
     showModal();
