@@ -8,8 +8,6 @@
         public $methodType;
         public $formFields;
 
-
-
          // constructor
          public function __construct($dClass){
             $this-> formName = "Demo Form";
@@ -54,5 +52,6 @@
 
     }
 
+    // Demo form obj
     $demoForm = new DemoForm($demos);
 ?>

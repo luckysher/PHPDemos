@@ -17,10 +17,10 @@
                         array('label' => 'Roll no.', 'fname' => 'rnum', 'placeholder' => 'Enter your roll no. here..', 'val' => '', 'errors' => '')];
            }
 
+        // set the title for the page
         public function setTitle($title){
             $this->title = $title;
         }
-
    }
 
    $demos = new PHPDemos;
