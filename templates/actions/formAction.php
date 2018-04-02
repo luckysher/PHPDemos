@@ -21,7 +21,8 @@ function checkFormErrors($demos){
     }
     if(empty($_POST["rnum"])){
         $errors = True;
-
+        $demos->formFields[3]["val"] = $_POST["rnum"];
+        $demos->formFields[3]["errors"] = "Roll number is required";
     }
     return $errors;
 }
