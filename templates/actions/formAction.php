@@ -1,5 +1,7 @@
 <?php
+// Various form action functions
 
+// check the error for th form data here
 function checkFormErrors($demos){
     if(empty($_POST["age"])){
         $demos->formFields[1]["val"] = $_POST["age"];
