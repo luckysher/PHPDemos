@@ -5,6 +5,15 @@
         public $menus;
         public $tabs;
         public $formFields;
+        //form data and error fileds
+
+        public $name_error = "";
+        public $age;
+        public $age_error = "";
+        public $marks;
+        public $marks_error="";
+        public $rnum;
+        public $rnum_error = "";
 
         public function __construct(){
             $this->title = "PHP Demos";
