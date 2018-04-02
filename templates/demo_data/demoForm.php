@@ -15,7 +15,6 @@
             $this-> formName = "Demo Form";
             $this-> fid = "dform";
             $this-> methodType = "post";
-            $this-> $marks_error = "checking..";
             $this-> formFields = $dClass->formFields;
          }
 
@@ -30,11 +29,11 @@
                   echo '<div class="field">'.
                        '     <label class="label">'.$fDetails["label"].'</label>'.
                        '     <div class="control">'.
-                       '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].'" name="'.$fDetails["fname"].'" val="'.$fDetails["val"].'">';
+                       '         <input class="input" type="text" placeholder="'.$fDetails["placeholder"].'" name="'.$fDetails["fname"].'" value="'.$fDetails["val"].'">';
                        if (!empty($fDetails["errors"])){
-                            echo '         <h2 class="has-text-danger"><span>*</span><span>'.$fDetails["errors"].'</span></h2>'.
+                            echo '         <h2 class="has-text-danger"><span>*</span><span>'.$fDetails["errors"].'</span></h2>';
                        }
-                       '     </div>'.
+                  echo '     </div>'.
                        '</div>';
           }
         }
