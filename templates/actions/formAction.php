@@ -41,6 +41,8 @@ function showModal(){
                        "   form fields : Roll No  :  ".$_POST["rnum"];
 
         $modal->setBodyText($description);
+
+        // show the actual modal
         $modal->show();
 }
 
