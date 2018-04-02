@@ -1,4 +1,12 @@
 <?php
+
+function checkFormErrors($demos){
+    if(empty($_POST["age"])){
+        $demos->formFields[1]["val"] = $_POST["age"];
+        $demos->formFields[1]["errors"] = "Age should be non empty/valid integer";
+    }
+}
+
  if ($_POST){
         $modal = new Modal("Form Data Demo with Modal");
         $description = "modal description:".
