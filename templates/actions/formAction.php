@@ -29,8 +29,9 @@ function showModal(){
 // check the errors and
 // show the modal
  if ($_POST){
-    checkFormErrors($demos);
-    showModal();
+    if(!checkFormErrors($demos)){
+        showModal();
+    }
  }
 
 ?>
