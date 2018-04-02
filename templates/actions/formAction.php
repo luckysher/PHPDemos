@@ -4,7 +4,11 @@
 // check the error for th form data here
 function checkFormErrors($demos){
     $errors = false;
-    if(empty($_POST["age"])){
+    if(empty($_POST["name"])){
+        $errors = True;
+        $demos->formFields[0]["name"] = $_POST["name"];
+    }
+     if(empty($_POST["age"])){
         $errors = True;
         $demos->formFields[1]["val"] = $_POST["age"];
         $demos->formFields[1]["errors"] = "Age should be non empty/valid integer";
