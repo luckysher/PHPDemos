@@ -7,6 +7,7 @@ function checkFormErrors($demos){
     if(empty($_POST["name"])){
         $errors = True;
         $demos->formFields[0]["name"] = $_POST["name"];
+        $demos->formFields[0]["errors"] = "Name should be non empty/valid  string";
     }
      if(empty($_POST["age"])){
         $errors = True;
