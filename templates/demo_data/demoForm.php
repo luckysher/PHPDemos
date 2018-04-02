@@ -8,6 +8,16 @@
         public $methodType;
         public $formFields;
 
+        //form data and error fileds
+        public $name = "";
+        public $name_error = "";
+        public $age;
+        public $age_error = "";
+        public $marks;
+        public $marks_error = "";
+        public $rnum;
+        public $rnum_error = "";
+
          // constructor
          public function __construct($dClass){
             $this-> formName = "Demo Form";
