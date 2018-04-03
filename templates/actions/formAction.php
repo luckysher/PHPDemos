@@ -7,7 +7,6 @@ function checkFormErrors($demos){
     //name check
     if(empty($_POST["name"])){
         $errors = True;
-
         $demos->formFields[0]["errors"] = "Name should be non empty/valid  string";
     }
     //age check
@@ -26,7 +25,7 @@ function checkFormErrors($demos){
         $demos->formFields[3]["errors"] = "Roll number is required";
     }
     if($errors){
-        $demos->formFields[0]["name"] = $_POST["name"];
+        $demos->formFields[0]["val"] = $_POST["name"];
         $demos->formFields[3]["val"] = $_POST["rnum"];
         $demos->formFields[2]["val"] = $_POST["marks"];
         $demos->formFields[1]["val"] = $_POST["age"];
