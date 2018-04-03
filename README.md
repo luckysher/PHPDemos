@@ -1,7 +1,6 @@
 # PHPDemos
 This project is demo for web design in PHP using bulma cssframework.
 
-![basic-features](https://github.com/luckysher/PHPDemos/blob/master/mockup.png)
 
 Mainly Focus on:
   1. SPA(Single Page Web Application) application
