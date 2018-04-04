@@ -42,12 +42,16 @@
             $this->tabs.append($tabName);
        }
 
-       public function renderTabs($tab){
+       public function renderTabs(){
        echo '<div class="tabs is-toggle is-toggle-rounded">'.
             '  <ul>';
-       foreach($this->tabs as $tabName):
-                echo '<li class="is-active">'.
-                      '  <a>'.
+       foreach($this->tabs as $i => $tabName):
+                if ($i == 0):
+                    echo '<li class="is-active">';
+                else:
+                    echo '<li>';
+                endif;
+                echo '  <a>'.
                       '     <span>'.$tabName.'</span>'.
                       '  </a>'.
                       '</li">';
