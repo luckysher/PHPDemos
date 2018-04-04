@@ -29,5 +29,10 @@
         }
    }
 
+   class Tabs{
+       public tabs;
+       public function addTab($tab){
+       }
+   }
    $demos = new PHPDemos;
 ?>
