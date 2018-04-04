@@ -44,13 +44,14 @@
 
        public function renderTabs($tab){
        echo '<div class="tabs is-toggle is-toggle-rounded">'.
-            '   ul';
-        foreach($tabNamesArr as $tabName):
+            '  <ul>';
+       foreach($this->tabs as $tabName):
                 echo '<li class="is-active">'.
                       '  <a>'.
                       '     <span>'.$tabName.'</span>'.
                       '  </a>'.
-                echo '</li">';
+                      '</li">';
+       endforeach;
        echo '   </ul>'.
             '</div>';
        }
