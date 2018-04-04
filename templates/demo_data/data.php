@@ -34,14 +34,14 @@
 
        public function __construct($tabNamesArr){
             if (!empty($tabNamesArr)){
-            foreach($tabNamesArr as $tabName){
-                $tabs
-            }
+                $this->tabs = $tabNamesArr;
          }
        }
 
-       public function addTab($tab){
+       public function addTabName($tabName){
+            $this->tabs.append($tabName);
        }
+
    }
    $demos = new PHPDemos;
 ?>
