@@ -56,4 +56,5 @@
        }
    }
    $demos = new PHPDemos;
+   $Tabs = new Tabs($demos->tabs);
 ?>
