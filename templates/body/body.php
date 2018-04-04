@@ -23,8 +23,12 @@ echo '<div class="page">'.
      '           </div>'.
      '        </div>'.
      '      </div>'.
-     '      <div class="container" id="demos" style="margin-top:50px;">'.
-     '        <div class="columns" id="formdemo">'.
+     '      <div class="container" id="demos" style="margin-top:50px;">';
+                   echo '<!-- Demo Tabs start here -->';
+                         $Tabs->renderTabs();
+                   echo '<!-- Demo Tabs end here -->';
+
+echo '        <div class="columns" id="formdemo">'.
      '           <div class="column">';
                     echo '<!-- Demo form start here -->';
                          $demoForm->startForm();

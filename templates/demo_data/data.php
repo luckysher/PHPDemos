@@ -42,7 +42,7 @@
             $this->tabs.append($tabName);
        }
 
-       public function RenderTabs($tab){
+       public function renderTabs($tab){
        echo '<div class="tabs is-toggle is-toggle-rounded">'.
             '   ul';
         foreach($tabNamesArr as $tabName):
