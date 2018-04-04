@@ -30,7 +30,16 @@
    }
 
    class Tabs{
-       public tabs;
+       public $tabs;
+
+       public function __construct($tabNamesArr){
+            if (!empty($tabNamesArr)){
+            foreach($tabNamesArr as $tabName){
+                $tabs
+            }
+         }
+       }
+
        public function addTab($tab){
        }
    }
