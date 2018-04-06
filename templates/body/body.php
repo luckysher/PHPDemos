@@ -3,9 +3,10 @@ echo '<!-- Demo modal class -->';
     include 'templates/modals/modal.php';
 echo '<!-- Demo modal class -->';
 
-echo '<!-- Demo formAction -->';
+echo '<!-- Actions -->';
     include 'templates/actions/formAction.php';
-echo '<!-- Demo form action -->';
+    include 'templates/actions/tabActions.php';
+echo '<!-- Actions -->';
 
 echo '<!-- Demo form class -->';
     include 'templates/demo_data/demoForm.php';
@@ -25,7 +26,7 @@ echo '<div class="page">'.
      '      </div>'.
      '      <div class="container" id="demos" style="margin-top:50px;">';
                    echo '<!-- Demo Tabs start here -->';
-                         $Tabs->renderTabs();
+                         $Tabs->renderTabs($active);
                    echo '<!-- Demo Tabs end here -->';
 
 echo '        <div class="columns" id="formdemo">'.
