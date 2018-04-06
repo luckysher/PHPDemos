@@ -5,8 +5,8 @@
   //$list = false;
 
   if($_GET):
-    if(isset($_GET("show")):
-        $active = $_GET("show");
+    if(isset($_GET["show"])):
+        $active = $_GET["show"];
      //=== "#form"):
         //$form = true;
     //    $active =
