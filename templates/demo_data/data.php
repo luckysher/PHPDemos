@@ -13,9 +13,9 @@
         public function __construct(){
             $this->title = "PHP Demos";
             $this->menus = ['Home', 'Contact us', 'About Us'];
-            $this->tabs = [ array('#form' => 'Form Demo'),
-                            array('#list' => 'List Render demo'),
-                            array('#modal' => 'Modal Demo')];
+            $this->tabs = [ array('form-demo' => 'Form Demo'),
+                            array('list-demo' => 'List Render demo'),
+                            array('modal-demo' => 'Modal Demo')];
 
             // set the other fields with label etc here.
             $this->formFields = [
