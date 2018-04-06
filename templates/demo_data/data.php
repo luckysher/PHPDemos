@@ -47,7 +47,8 @@
        public function renderTabs($active){
        echo '<div class="tabs is-toggle is-toggle-rounded is-centered">'.
             '  <ul>';
-       foreach($this->tabs as $path => $tabName):
+       foreach($this->tabs as $tab):
+            foreach($tab as $path => $tabName):
                 if (!empty($active) && $active === $path):
                     echo '<li class="is-active">';
                 else:
@@ -57,6 +58,7 @@
                       '     <span>' .$tabName. '</span>'.
                       '  </a>'.
                       '</li">';
+            endforeach;
        endforeach;
        echo '   </ul>'.
             '</div>';
