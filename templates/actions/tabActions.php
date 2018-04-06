@@ -8,7 +8,8 @@
         $form = true;
     else if($_GET("show") === "#modal"):
         $modal = true;
-
+    else if($_GET("show") === "#list"):
+        $list = true;
     endif;
   endif;
 
