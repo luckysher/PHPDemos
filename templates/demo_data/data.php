@@ -13,7 +13,9 @@
         public function __construct(){
             $this->title = "PHP Demos";
             $this->menus = ['Home', 'Contact us', 'About Us'];
-            $this->tabs = ['Form Demo', 'List Render demo', 'Modal Demo'];
+            $this->tabs = [ array('#form' => 'Form Demo'),
+                            array('#list' => 'List Render demo'),
+                            array('#modal' => 'Modal Demo')];
 
             // set the other fields with label etc here.
             $this->formFields = [
@@ -45,13 +47,13 @@
        public function renderTabs(){
        echo '<div class="tabs is-toggle is-toggle-rounded is-centered">'.
             '  <ul>';
-       foreach($this->tabs as $i => $tabName):
-                if ($i == 0):
-                    echo '<li class="is-active">';
-                else:
-                    echo '<li>';
-                endif;
-                echo '  <a>'.
+       foreach($this->tabs as $path => $tabName):
+                //if ($i == 0):
+                //    echo '<li class="is-active">';
+                //else:
+                echo '<li>';
+                //endif;
+                echo  '  <a href="index.php?'.$path.'">'.
                       '     <span>'.$tabName.'</span>'.
                       '  </a>'.
                       '</li">';
