@@ -29,15 +29,16 @@ echo '<div class="page">'.
                          $Tabs->renderTabs($active);
                    echo '<!-- Demo Tabs end here -->';
 
-echo '        <div class="columns" id="formdemo">'.
+echo '        <div class="columns">'.
      '           <div class="column">';
+                  if ($active === 'form-demo'):
                     echo '<!-- Demo form start here -->';
                          $demoForm->startForm();
                          $demoForm->addFormFields();
                          $demoForm->addSubmitButton();
                          $demoForm->endForm();
                     echo '<!-- Demo form end here -->';
-
+                   endif;
 echo '           </div>'.
      '        </div>'.
      '    </div>'.
