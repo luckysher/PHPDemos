@@ -38,11 +38,11 @@ echo '        <div class="columns">'.
                             $demoForm->addSubmitButton();
                             $demoForm->endForm();
                         echo '<!-- Demo form end here -->';
-                   else if ($active === 'list-demo'):
+                   elseif ($active === 'list-demo'):
                         echo '<!-- Demo List start here -->';
                         echo '<h1 style="color:red;">List Demo</h1>';
                         echo '<!-- Demo List end here -->';
-                   else if ($active === 'modal-demo'):
+                   elseif ($active === 'modal-demo'):
                         echo '<!-- Demo modal start here -->';
                         echo '<h1 style="color:green;">Modal Demo</h1>';
                         echo '<!-- Demo modal end here -->';
