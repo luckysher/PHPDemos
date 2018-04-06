@@ -43,7 +43,7 @@
        }
 
        public function renderTabs(){
-       echo '<div class="tabs is-toggle is-toggle-rounded">'.
+       echo '<div class="tabs is-toggle is-toggle-rounded is-centered">'.
             '  <ul>';
        foreach($this->tabs as $i => $tabName):
                 if ($i == 0):
