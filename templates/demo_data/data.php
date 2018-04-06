@@ -44,15 +44,15 @@
             $this->tabs.append($tabName);
        }
 
-       public function renderTabs(){
+       public function renderTabs($active){
        echo '<div class="tabs is-toggle is-toggle-rounded is-centered">'.
             '  <ul>';
        foreach($this->tabs as $path => $tabName):
-                //if ($i == 0):
-                //    echo '<li class="is-active">';
-                //else:
-                echo '<li>';
-                //endif;
+                if (!empty($active) && $active === $path):
+                    echo '<li class="is-active">';
+                else:
+                    echo '<li>';
+                endif;
                 echo  '  <a href="index.php?show='.$path.'">'.
                       '     <span>' .$tabName. '</span>'.
                       '  </a>'.
