@@ -32,12 +32,17 @@ echo '<div class="page">'.
 echo '        <div class="columns">'.
      '           <div class="column">';
                   if ($active === 'form-demo'):
-                    echo '<!-- Demo form start here -->';
-                         $demoForm->startForm();
-                         $demoForm->addFormFields();
-                         $demoForm->addSubmitButton();
-                         $demoForm->endForm();
-                    echo '<!-- Demo form end here -->';
+                        echo '<!-- Demo form start here -->';
+                            $demoForm->startForm();
+                            $demoForm->addFormFields();
+                            $demoForm->addSubmitButton();
+                            $demoForm->endForm();
+                        echo '<!-- Demo form end here -->';
+                   else if ($active === 'list-demo'):
+                        echo '<!-- Demo List start here -->';
+                        echo '<h1 style="color:red;">List Demo</h1>';
+                        echo '<!-- Demo List end here -->';
+
                    endif;
 echo '           </div>'.
      '        </div>'.
