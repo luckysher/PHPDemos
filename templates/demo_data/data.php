@@ -54,7 +54,7 @@
                 echo '<li>';
                 //endif;
                 echo  '  <a href="index.php?show='.$path.'">'.
-                      '     <span>'.$tabName.'</span>'.
+                      '     <span>' .$tabName. '</span>'.
                       '  </a>'.
                       '</li">';
        endforeach;
