@@ -9,3 +9,4 @@ Mainly Focus on:
   3. Rendering form using class with the conditional rendering
   4. How to get the posted data using form
   5. Modal demo using bulma css
+  6. Rendering list
